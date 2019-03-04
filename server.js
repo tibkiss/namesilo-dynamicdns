@@ -5,7 +5,7 @@ const fs = require('fs');
 const got = require('got');
 const parseStringAsync = promisify(require('xml2js').parseString);
 const readFileAsync = promisify(fs.readFile);
-const hostFilePath = './hosts.json';
+const hostFilePath = '/config/hosts.json';
 const apiKey = process.env.API_KEY;
 
 const getCurrentIp = async () => {
